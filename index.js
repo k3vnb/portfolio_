@@ -1,3 +1,4 @@
+
 const STORE = [
     {
         projectTitle: 'Art Quiz',
