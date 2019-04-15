@@ -131,7 +131,7 @@ font-family: 'Questrial', sans-serif;
 }
 
 .splash-page-links a:hover {
-    border: 1px solid #cf0dff91;
+    border: .5px solid #cf0dff91;
     text-shadow: 1px 1px 1px #b700e4;
     cursor: pointer;
     box-shadow: 1px 1px 2px rgba(23, 23, 23, 0.468);
@@ -238,7 +238,8 @@ font-family: 'Questrial', sans-serif;
 }
 
 .project-card-outer {
-    border: 1px solid black;
+    background-color: #c8c8ff;
+    border: 2px solid #00000054;
     box-shadow: 2px 2px 2px #00000052;
     height: 200px;
     padding: 2%;
@@ -256,6 +257,7 @@ font-family: 'Questrial', sans-serif;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border: 1px solid grey;
 }
 
 .project-info-container {
@@ -269,10 +271,12 @@ font-family: 'Questrial', sans-serif;
 
 .project-name {
     font-size: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .project-description {
     font-size: 12px;
+    padding: 1% 2%;
 }
 
 .project-link button a {
@@ -281,9 +285,25 @@ font-family: 'Questrial', sans-serif;
 }
 
 .project-link button{
-    border: .5px solid black;
+    border: .5px solid grey;
     width: 120px;
     height: 35px;
+    font-size: 15px;
+    color: white;
+}
+
+.project-link button:hover {
+    cursor: pointer;
+    border: 1px solid #cf0dffbf;
+    box-shadow: 1px 1px 2px rgba(23, 23, 23, 0.468);
+}
+
+.github-btn {
+    background-color: #29b729;
+}
+
+.live-site-btn {
+    background-color: #587ec3;
 }
 
 @media screen and (min-width: 420px){
@@ -382,3 +402,31 @@ footer {
     padding-bottom: 3%;
     text-align: right;
 }
+
+/* loading spinner */
+#overlay {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner {
+    width: 80px;
+    height: 80px; 
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid #f25a41;
+    border-radius: 100%;
+
+    animation: spin 1s infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

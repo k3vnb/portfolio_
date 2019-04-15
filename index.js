@@ -9,18 +9,26 @@ const STORE = [
     {
         projectTitle: 'Cupcake Catcher',
         projectDescription: 'A simple HTML5 Canvas based classic computer game, made with vanilla Javascript, HTML5, HTML5 Canvas, CSS3',
-        projectScreenShot: 'img/art_quiz_screenshot1.png',
+        projectScreenShot: 'img/cupcake_catcher.png',
         githubURL: 'ghttps://github.com/lemurriot/cupcake_catcher_game',
         liveURL: 'https://lemurriot.github.io/cupcake_catcher_game/'
     },
     {
         projectTitle: 'Krystal Clear Cleaners',
         projectDescription: 'Static site built in React for a commercial cleaning service.',
-        projectScreenShot: 'img/art_quiz_screenshot1.png',
+        projectScreenShot: 'img/krystalclear1.png',
         githubURL: 'https://github.com/lemurriot/krystal-clean',
         liveURL: 'http://krystalclearcleaners.com/'
     }
 ];
+
+function loadingSpinner(){
+    const overlay = document.getElementById("overlay");
+
+    window.addEventListener('load', function(){
+        overlay.style.display = 'none';
+    });
+}
 
 
 function renderProjectCards(){
@@ -39,10 +47,10 @@ function renderProjectCards(){
                     ${project.projectDescription}
                 </div>
                 <div class="project-github-link project-link">
-                    <a href="${project.githubURL}"><button>Github Link</button></a>
+                    <a href="${project.githubURL}"><button class="github-btn">Github Link</button></a>
                 </div>
                 <div class="project-livesite-link project-link">
-                    <a href="${project.liveURL}"><button>Live Site Link</button></a>
+                    <a href="${project.liveURL}"><button class="live-site-btn">Live Site Link</button></a>
                 </div>
             </div>
         </div>
@@ -64,6 +72,7 @@ function contactLinkHover(){
 
 $(
     contactLinkHover(),
-    renderProjectCards()
+    renderProjectCards(),
+    loadingSpinner()
  )
 
