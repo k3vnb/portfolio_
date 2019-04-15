@@ -1,4 +1,54 @@
+const STORE = [
+    {
+        projectTitle: 'Art Quiz',
+        projectDescription: 'A simple web app for testing your art knowledge. Match the famous picture to it’s artist. Made with vanilla Javascript, jQuery, HTML5, CSS3',
+        projectScreenShot: 'img/art_quiz_screenshot1.png',
+        githubURL: 'https://github.com/lemurriot/art_quiz',
+        liveURL: 'https://lemurriot.github.io/art_quiz/'
+    },
+    {
+        projectTitle: 'Cupcake Catcher',
+        projectDescription: 'A simple HTML5 Canvas based classic computer game, made with vanilla Javascript, HTML5, HTML5 Canvas, CSS3',
+        projectScreenShot: 'img/art_quiz_screenshot1.png',
+        githubURL: 'ghttps://github.com/lemurriot/cupcake_catcher_game',
+        liveURL: 'https://lemurriot.github.io/cupcake_catcher_game/'
+    },
+    {
+        projectTitle: 'Krystal Clear Cleaners',
+        projectDescription: 'Static site built in React for a commercial cleaning service.',
+        projectScreenShot: 'img/art_quiz_screenshot1.png',
+        githubURL: 'https://github.com/lemurriot/krystal-clean',
+        liveURL: 'http://krystalclearcleaners.com/'
+    }
+];
 
+
+function renderProjectCards(){
+    STORE.forEach(project => {
+        $('.projects-section-main-content').append(`
+        <div class="project-card-outer">
+            <div class="project-image-container">
+              <img class="project-screenshot" src=${project.projectScreenShot} alt="project screenshot">
+                
+            </div>
+            <div class="project-info-container">
+                <div class="project-name">
+                    ${project.projectTitle}
+                </div>
+                <div class="project-description">
+                    ${project.projectDescription}
+                </div>
+                <div class="project-github-link project-link">
+                    <a href="${project.githubURL}"><button>Github Link</button></a>
+                </div>
+                <div class="project-livesite-link project-link">
+                    <a href="${project.liveURL}"><button>Live Site Link</button></a>
+                </div>
+            </div>
+        </div>
+        `)
+    })
+}
 
 function contactLinkHover(){
     console.log('yo');
@@ -13,6 +63,7 @@ function contactLinkHover(){
 
 
 $(
-    contactLinkHover()
+    contactLinkHover(),
+    renderProjectCards()
  )
 

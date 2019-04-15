@@ -93,7 +93,7 @@ font-family: 'Questrial', sans-serif;
     max-width: 600px;
     color: white;
     background-color: #221d46bf;
-    border: 2px inset #d00dffd1;
+    border: 2px solid #905c9cd1;
     box-shadow: 0px 1px 4px #ff09f782;
     padding: 5%;
     text-align: center;
@@ -223,7 +223,8 @@ font-family: 'Questrial', sans-serif;
 
 .projects-section-hero {
     height: 30%;
-    background-color: #b70fe0;
+    background-color: #4b0d79;
+    color: white;
     padding: 5%;
     display: flex;
     justify-content: flex-end;
@@ -249,6 +250,12 @@ font-family: 'Questrial', sans-serif;
     height: 100%;
     background-color: grey;
     width: 45%;
+}
+
+.project-screenshot {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .project-info-container {
@@ -314,7 +321,8 @@ font-family: 'Questrial', sans-serif;
 
 .contacts-section-hero {
     height: 30%;
-    background-color: #b70fe0;
+    background-color: #4b0d79;
+    color: white;
     padding: 5%;
     display: flex;
     justify-content: flex-end;
@@ -329,7 +337,7 @@ font-family: 'Questrial', sans-serif;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    background-color: #6c7dffb3;
+    background-color: #8f9bf3b3;
 }
 
 .contact-link-container {
