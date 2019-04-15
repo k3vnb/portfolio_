@@ -1,0 +1,311 @@
+/* 
+fuscia: #ff09f7
+transparent purple: #cf0dffbf
+full fuscia 2: #cf0dff;
+purple: #b70fe0;
+sky blue: #6db9ea;
+
+font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Questrial', sans-serif;
+*/
+
+
+
+/* global */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  body {
+      position: relative;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h2 {
+    font-family: 'Questrial', sans-serif;
+}
+
+  /* header & header nav */
+
+  header {
+      width: 100%;
+      height: 50px;
+      background-color: #cf0dffbf;
+      display: flex;
+      justify-content: space-between;
+      padding: 1% 5%;
+      position: fixed;
+      color: white;
+  }
+
+  header a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+  }
+
+  header nav {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  /* splash-page */
+
+.splash-page-container {
+    background-color: #9da4f5;
+    background-image: url('https://www.princeton.edu/sites/default/files/styles/half_2x/public/images/2018/01/clouds-19.jpg?itok=Qfa5j6NW');  
+    height: 100vh;   
+    display: flex;     
+    justify-content: center;;
+    align-items: center;
+}
+
+
+.splash-page-main-content {
+    height: 50%;
+    max-height: 500px;
+    width: 80%;
+    max-width: 600px;
+    color: white;
+    background-color: #221d46bf;
+    border: 2px inset #d00dffd1;
+    box-shadow: 0px 1px 4px #ff09f782;
+    padding: 5%;
+    text-align: center;
+    text-shadow: 1px 1px 1px #cf0dff;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.splash-page-main-content h1 {
+    font-size: 40px;
+    margin: 0%;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+
+.splash-page-main-content .page-links {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.splash-page-main-content .page-links a {
+    border: .5px solid black;
+    padding: 1% 2%;
+    width: 80%;
+    background-color: #05010673;
+    color: white;
+    text-decoration: none;
+}
+@media screen and (min-width: 550px){
+    .splash-page-main-content .page-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2%;
+    }
+    
+    .splash-page-main-content .page-links a {
+        width: 25%;
+    }
+}
+
+/* About Section */
+
+#about {
+    padding: 150px 8%;
+}
+
+.about-section-container {
+    min-height: 100vh;
+    margin-top: 50px;
+}
+
+.about-section-top-line {
+    text-align: center;
+    line-height: 36px;
+}
+
+.about-section-top-line-left {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.about-section-top-line-right {
+    font-size: 20px;
+}
+
+.about-section-bottom-line {
+    text-align: left;
+    text-indent: 31px;
+    margin-top: 50px;
+    hyphens: auto;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media screen and (min-width: 550px){
+    .about-section-container {
+        padding: 0% 15%; 
+    }
+    .about-section-top-line {
+        display: flex;
+        align-items: center;
+    }
+    .about-section-top-line div {
+        width: 50%;
+    }
+    .about-section-top-line-left {
+        font-size: 125px;
+    }
+    .about-section-top-line-right {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .about-section-bottom-line {
+        line-height: 32px;
+    }
+}
+
+/* projects page */
+
+.projects-section {
+    min-height: 100vh;
+}
+
+.projects-section-hero {
+    height: 30%;
+    background-color: #b70fe0;
+    padding: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.projects-section-main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+.project-card-outer {
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #00000052;
+    height: 200px;
+    padding: 2%;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.project-image-container {
+    height: 100%;
+    background-color: grey;
+    width: 45%;
+}
+
+.project-info-container {
+    text-align: center;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-name {
+    font-size: 20px;
+}
+
+.project-description {
+    font-size: 12px;
+}
+
+.project-link button a {
+    width: 100%;
+    height: 100%;
+}
+
+.project-link button{
+    border: .5px solid black;
+    width: 120px;
+    height: 35px;
+}
+
+@media screen and (min-width: 420px){
+    .project-link button{ 
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 760px){
+    .projects-section-main-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .project-card-outer {
+        width: 30%;
+        flex-direction: column;
+        height: 400px;
+    }
+    .project-image-container {
+        width: 100%;
+        height: 50%;
+    }
+    .project-info-container {
+        width: 100%;
+        height: 50%;
+    }
+
+}
+
+/* Contact Section */
+
+.contacts-section {
+    min-height: 100vh;
+}
+
+.contacts-section-hero {
+    height: 30%;
+    background-color: #b70fe0;
+    padding: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.contacts-section-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-bottom: 40px;
+    background-image: url('https://www.princeton.edu/sites/default/files/styles/half_2x/public/images/2018/01/clouds-19.jpg?itok=Qfa5j6NW');  
+}
+
+.contacts-section-main-content > div {
+    width: 50%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+/* footer */
+
+footer {
+    color: #cf0dff;;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    padding: 1%;
+    padding-bottom: 3%;
+    text-align: right;
+}
