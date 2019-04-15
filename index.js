@@ -1,3 +1,5 @@
+
+
 function contactLinkHover(){
     console.log('yo');
     $('.contact-link-container img').hover(function(){
@@ -10,5 +12,7 @@ function contactLinkHover(){
 
 
 
-$(contactLinkHover())
+$(
+    contactLinkHover()
+ )
 
