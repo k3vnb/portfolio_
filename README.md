@@ -1,3 +1,3 @@
 # Description
 
-Implementing color & typography to greybox wireframe
+Implementation of portfolio site for submission
