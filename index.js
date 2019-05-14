@@ -8,11 +8,11 @@ const STORE = [
         liveURL: 'https://lemurriot.github.io/art_quiz/'
     },
     {
-        projectTitle: 'Cupcake Catcher',
-        projectDescription: 'A classic computer game, made with vanilla Javascript, HTML5, HTML5 Canvas, CSS3',
-        projectScreenShot: 'img/cupcake_catcher.png',
-        githubURL: 'ghttps://github.com/lemurriot/cupcake_catcher_game',
-        liveURL: 'https://lemurriot.github.io/cupcake_catcher_game/'
+        projectTitle: 'PDX Dashboard',
+        projectDescription: 'News, Weather, Events, and Info about Portland, OR',
+        projectScreenShot: 'img/pdx_dashboard_screenshot.png',
+        githubURL: 'https://github.com/lemurriot/pdx_dashboard',
+        liveURL: 'https://lemurriot.github.io/pdx_dashboard/'
     },
     {
         projectTitle: 'Krystal Clear Cleaners',
